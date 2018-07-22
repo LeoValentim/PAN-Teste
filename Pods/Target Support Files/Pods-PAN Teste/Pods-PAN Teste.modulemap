@@ -1,0 +1,6 @@
+framework module Pods_PAN_Teste {
+  umbrella header "Pods-PAN Teste-umbrella.h"
+
+  export *
+  module * { export * }
+}
