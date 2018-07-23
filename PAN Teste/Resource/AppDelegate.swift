@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import SwiftMessageBar
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // MessageBarConfig config
+        let messageBarConfig = MessageBarConfig.Builder()
+            .withSuccessColor(#colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1))
+            .withErrorColor(#colorLiteral(red: 0.9254902005, green: 0.2352941185, blue: 0.1019607857, alpha: 1))
+            .withInfoColor(#colorLiteral(red: 1, green: 0.8, blue: 0, alpha: 1))
+            .withTitleFont(.boldSystemFont(ofSize: 16))
+            .withTitleColor(.black)
+            .withMessageColor(.black)
+            .build()
+        SwiftMessageBar.setSharedConfig(messageBarConfig)
+        
         return true
     }
 

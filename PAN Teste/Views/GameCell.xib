@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GameCell" customModule="PAN_Teste" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="243"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="243"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nJV-LU-WCv" customClass="ImageView" customModule="PAN_Teste" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="243"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBY-aT-yXO">
+                        <rect key="frame" x="0.0" y="162" width="240" height="81"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="pw5-ES-eNa">
+                                <rect key="frame" x="16" y="8" width="208" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KKI-16-dJq">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Popularidade:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bub-gF-kK5">
+                                        <rect key="frame" x="0.0" y="32.5" width="78" height="32.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pw5-ES-eNa" firstAttribute="leading" secondItem="CBY-aT-yXO" secondAttribute="leading" constant="16" id="Gcy-sp-77K"/>
+                            <constraint firstAttribute="trailing" secondItem="pw5-ES-eNa" secondAttribute="trailing" constant="16" id="H5K-cd-ebv"/>
+                            <constraint firstAttribute="bottom" secondItem="pw5-ES-eNa" secondAttribute="bottom" constant="8" id="lND-ga-Cbx"/>
+                            <constraint firstItem="pw5-ES-eNa" firstAttribute="top" secondItem="CBY-aT-yXO" secondAttribute="top" constant="8" id="vMw-rR-PTV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="nJV-LU-WCv" secondAttribute="trailing" id="2TF-5n-cFq"/>
+                <constraint firstAttribute="bottom" secondItem="nJV-LU-WCv" secondAttribute="bottom" id="FKg-lV-MuF"/>
+                <constraint firstItem="CBY-aT-yXO" firstAttribute="height" secondItem="ZTg-uK-7eu" secondAttribute="height" multiplier="0.333" id="Fpo-t5-N7h"/>
+                <constraint firstAttribute="bottom" secondItem="CBY-aT-yXO" secondAttribute="bottom" id="Jto-v9-vGR"/>
+                <constraint firstItem="nJV-LU-WCv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NaD-5E-1An"/>
+                <constraint firstItem="nJV-LU-WCv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="gic-sb-2Br"/>
+                <constraint firstAttribute="trailing" secondItem="CBY-aT-yXO" secondAttribute="trailing" id="uuN-Nz-Prt"/>
+                <constraint firstItem="CBY-aT-yXO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zbe-hZ-qM6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="240" height="243"/>
+            <connections>
+                <outlet property="nameLabel" destination="KKI-16-dJq" id="0tu-lE-0we"/>
+                <outlet property="photoImage" destination="nJV-LU-WCv" id="6Tb-iB-dgU"/>
+                <outlet property="popularityLabel" destination="Bub-gF-kK5" id="TXK-kz-IYT"/>
+            </connections>
+            <point key="canvasLocation" x="120" y="148.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

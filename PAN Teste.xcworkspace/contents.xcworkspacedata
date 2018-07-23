@@ -2,6 +2,18 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:PAN Teste/Models/DAOs/TopGameEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PAN Teste/Models/DAOs/TopGameEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PAN Teste/Models/DAOs/GameEntity+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:PAN Teste/Models/DAOs/GameEntity+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:PAN Teste.xcodeproj">
    </FileRef>
    <FileRef
